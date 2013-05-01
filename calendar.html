@@ -1,96 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='lib/fullcalendar-1.6.1/fullcalendar/fullcalendar.css' rel='stylesheet' />
-<link href='lib/fullcalendar-1.6.1/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
-<script src='lib/fullcalendar-1.6.1/jquery/jquery-1.9.1.min.js'></script>
-<script src='lib/fullcalendar-1.6.1/jquery/jquery-ui-1.10.2.custom.min.js'></script>
-<script src='lib/fullcalendar-1.6.1/fullcalendar/fullcalendar.min.js'></script>
-<script>
 
-	$(document).ready(function() {
-	
-		var date = new Date();
-		var d = date.getDate();
-		var m = date.getMonth();
-		var y = date.getFullYear();
-		
-		
-		$('#calendar').fullCalendar({
-			header: {
-				left: 'prev,next',
-				center: 'title',
-				right: 'month,basicWeek'
-			},
-			editable: true,
-			events: [
-		/*	{
-					title: 'All Day Event',
-					start: new Date(y, m, 1)
-				},
-				{
-					title: 'Long Event',
-					start: new Date(y, m, d-5),
-					end: new Date(y, m, d-2)
-				},
-				{
-					id: 999,
-					title: 'Repeating Event',
-					start: new Date(y, m, d-3, 16, 0),
-					allDay: false
-				},
-				{
-					id: 999,
-					title: 'Repeating Event',
-					start: new Date(y, m, d+4, 16, 0),
-					allDay: false
-				},
-				{
-					title: 'Meeting',
-					start: new Date(y, m, d, 10, 30),
-					allDay: false
-				},
-				{
-					title: 'Lunch',
-					start: new Date(y, m, d, 12, 0),
-					end: new Date(y, m, d, 14, 0),
-					allDay: false
-				},
-				{
-					title: 'Birthday Party',
-					start: new Date(y, m, d+1, 19, 0),
-					end: new Date(y, m, d+1, 22, 30),
-					allDay: false
-				},*/
-				{
-					title: 'Doctor Visit',
-					start: new Date(y, m, 14),
-					end: new Date(y, m, 14),
-					url: 'http://google.com/',
-				},
-				{
-					title: 'Doctor Visit',
-					start: new Date(y, m, 28),
-					end: new Date(y, m, 28),
-					url: 'http://google.com/'
-
-				},
-				{
-					title: 'Lab Result',
-					start: new Date(y, m, 22),
-					end: new Date(y, m, 22),
-					url: 'http://google.com/',
-					color: '#7AA2BC'
-
-				}
-			], eventColor: '#B286B6',
-		});
-		
-	});
-	
-
-
-</script>
 <style>
 
 	body {
@@ -110,6 +21,8 @@
 		table-layout:fixed;
 		font-family:Arial, Helvetica, sans-serif;
 		padding-left:0px;
+		padding-top:50px;
+		border-spacing:10px;
 	}
 	td{
 		width:20px;
@@ -117,6 +30,7 @@
 		padding:12px;
 		font-size:32px;
 		font-weight:bold;
+		margin:10px;
 	}
 	th{
 		width:35px;
@@ -149,10 +63,23 @@
 
 	}
 
+
 </style>
+ 	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
-<!--<div id='calendar'></div>-->
+<img src="images/CalendarHeader.jpg" width="1000px">
+    <div class="container">
+
+<div align="left">
+<h2>This week: Weeek 12</h2>
+
+<p>By now, your daughter is the weight of a large mango, almost a pound!</p>
+
+<h3>Today:</h3>
+<p>Feeling good, lots of kicking.<br/	><small>Weight tracked.</small></p>
+</div>
 <table class="table">
   <tr>
     <th scope="row">wk 12</th>
@@ -202,5 +129,6 @@
 </table>
 <img src="images/Add.jpg" class="bottom-add" width="60"	>
 <img src="images/ExportArrow.jpg" class="bottom-share" width="60">
+</div>
 </body>
 </html>
