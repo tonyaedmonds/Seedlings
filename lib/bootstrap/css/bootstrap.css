@@ -46,6 +46,9 @@ nav,
 section {
   display: block;
 }
+footer{
+	margin-top:30px;
+	}
 audio,
 canvas,
 video {
