@@ -104,10 +104,86 @@
 		width: 700px;
 		margin: 0 auto;
 		}
+	table{
+		width:700px;
+		height:500px;
+		table-layout:fixed;
+	}
+	td{
+		width:10px;
+		background-color:#CCC;	
+		padding:5px;
+	}
+	tr{
+		line-height:30px;
+	}
+	th{
+		width:35px;
+		text-align:center;
+	}
+	.whitecell{
+		background-color:#FFF;	
+	}
+	.today{
+		background-color:#99C4AF;
+	}
+	.visit{
+		background-color:#B286B6;
+	}
+	.previousday{
+		background-color:#989898;
+	}
 
 </style>
 </head>
 <body>
-<div id='calendar'></div>
+<!--<div id='calendar'></div>-->
+<table class="table">
+  <tr>
+    <th scope="row">wk 12</th>
+    <td class="previousday">&nbsp;</td>
+    <td class="previousday">&nbsp;</td>
+    <td class="today">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">wk 13</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">wk 14</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="visit">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">wk 15</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">wk 16</th>
+    <td>&nbsp;</td>
+    <td class="visit">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="whitecell">&nbsp;</td>
+  </tr>
+</table>
 </body>
 </html>
